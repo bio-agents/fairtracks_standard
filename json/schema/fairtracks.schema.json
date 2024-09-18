@@ -1,0 +1,51 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://raw.githubusercontent.com/fairtracks/fairtracks_standard/master/json/schema/fairtracks.schema.json",
+    "$comment": "OPML signature: 86f8096c7ab51ae6560f983483f13876e52d0d4c03168e1000dd48bb327493df",
+    "title": "FAIRification of Genomic Tracks JSON Schema",
+    "type": "object",
+    "properties": {
+        "@schema": {
+            "description": "The JSON schema absolute URI. Used for link JSON data to a particular version of the JSON schema. Must match the value of '$id' in the linked schema",
+            "type": "string",
+            "format": "iri",
+            "const": "https://raw.githubusercontent.com/fairtracks/fairtracks_standard/master/json/schema/fairtracks.schema.json"
+        },
+        "studies": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/fairtracks/fairtracks_standard/master/json/schema/fairtracks_study.schema.json"
+            }
+        },
+        "experiments": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/fairtracks/fairtracks_standard/master/json/schema/fairtracks_experiment.schema.json"
+            }
+        },
+        "samples": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/fairtracks/fairtracks_standard/master/json/schema/fairtracks_sample.schema.json"
+            }
+        },
+        "tracks": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/fairtracks/fairtracks_standard/master/json/schema/fairtracks_track.schema.json"
+            }
+        }
+    },
+    "required": [
+        "@schema",
+        "studies",
+        "experiments",
+        "samples",
+        "tracks"
+    ],
+    "additionalProperties": true
+}
