@@ -1,15 +1,3 @@
-{
-    "@schema": "https://raw.githubusercontent.com/fairtracks/fairtracks_standard/master/json/schema/fairtracks_study.schema.json",
-    "global_id": "GEO:GSE35583",
-    "local_id": "UW_ChipSeq",
-    "study_name": "Histone Modifications by ChIP-seq from ENCODE/University of Washington",
-    "publications": [
-        "22955617"
-    ],
-    "contact": {
-        "name": "ENCODE DCC",
-        "e-mail": "encode-help@lists.stanford.edu",
-        "orcid": "0000-0000-0000-0000"
-    },
-    "$comment": "OPML signature: 5d178f14eadd740b24e5c61f7080533e086bc977e8911d74490bd385862c3a50"
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:f87e67eaee4a84c3ed8f7574f72e3a2fdac952642cdd820527158c5c6b064670
+size 581
